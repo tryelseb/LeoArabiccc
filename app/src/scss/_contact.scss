@@ -1,0 +1,185 @@
+.whole_contact {
+    //    @media screen and (min-width: 768px) {
+    height: 100vh;
+    //    }
+
+    background-image: url(../img/bg-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        margin-top: 40px;
+        font-size: 3rem;
+        @media screen and (max-width: 767px) {
+            margin-top: 55px;
+            font-size: 2.5rem;
+        }
+    }
+
+    form {
+        input,
+        textarea {
+            padding: 10px 10px 5px 0;
+            width: 100%;
+            color: #fff;
+            outline: none;
+            background: none;
+            border-color: $gold2;
+            border-width: 0 0 1px 0;
+            @media screen and (min-width: 992px) {
+                margin-top: 40px;
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px){
+                margin-top: 20px;
+            }
+            &::-webkit-input-placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                color: #888585;
+            }
+
+            &::-webkit-input-placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                color: #888585;
+            }
+
+            &:focus::-moz-placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                color: #888585;
+            }
+
+            &:focus:-moz-placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                color: #888585;
+            }
+
+            &:focus:-ms-input-placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                color: #888585;
+            }
+        }
+    }
+    .address{
+        @media screen and (max-width: 767px){
+            margin-top: 130px;
+        }
+        @media screen and (min-width: 768px){
+            margin-top: 180px;
+        }
+        p{
+            color: #fff;
+            font-size: 18px;
+            padding-right: 40px; 
+            &:before {
+                content: " ";
+                position: absolute;
+                right: 10px;
+                height: 30px;
+                width: 30px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(1){
+                &:before {
+                    background-image: url(../img/small_phone.png);
+                }
+            }
+            &:nth-child(2){
+                &:before {
+                    background-image: url(../img/small_tag.png);
+                }
+            }
+            &:nth-child(3){
+                &:before {
+                    background-image: url(../img/small_timer.png);
+                }
+            }
+        }
+    }
+    .button {
+        display: block;
+        height: 60px;
+        width: 260px;
+        border-radius: 8px;
+        border: 1px solid $gold2;
+        padding: 5px;
+        position: absolute;
+        @media screen and (min-width: 768px) {
+            margin-top: 70px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 40px;
+        }
+        button {
+            font-weight: 700;
+            border: none;
+            outline: none;
+            display: block;
+            height: 48px;
+            width: 248px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 8px;
+            color: #000;
+            background: linear-gradient(45deg, $gold2, $gold);
+            transition: background 0.4s;
+
+            .text {
+                position: relative;
+                top: -20px;
+            }
+
+            &:hover {
+                color: #000;
+                text-decoration: none;
+
+                .pencil {
+                    padding-left: 60px;
+                }
+            }
+
+            .pencil {
+                font-weight: 700;
+                font-size: 18px;
+                display: inline-block;
+                height: 48px;
+                padding-left: 40px;
+                background-image: url(../img/pencile.png);
+                background-repeat: no-repeat;
+                background-position: 0px center;
+                transition: padding-left .3s;
+            }
+        }
+    }
+
+    .section_footer {
+        background-color: #1f1f1f;
+        width: 100%;
+        margin-top: 20px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+
+        p {
+            display: inline-block;
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #676a6a;
+            font-size: 20px;
+            padding-left: 55px;
+            background-image: url(../img/trademark.png);
+            background-position: 20px center;
+            background-repeat: no-repeat;
+            padding-right: 20px;
+        }
+    }
+}

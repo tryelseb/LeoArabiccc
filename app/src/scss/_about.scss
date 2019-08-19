@@ -1,0 +1,254 @@
+.main_about {
+
+    h1,
+    h2 {
+        color: $gold2;
+        font-weight: 600;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    background-image: url(../img/pattern.png);
+
+    .section_1 {
+        background-image: url(../img/bg1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 120px center;
+
+        .goldline_about {
+            background-color: $gold;
+        }
+    }
+
+    .section_3 {
+        background-image: url(../img/bg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+        form{
+            position: relative;
+            height: 800px;
+        }
+        input,
+        select,
+        textarea {
+            color: #fff;
+            font-size: 22px;
+            display: block;
+            border-radius: 10px;
+            background-color: rgba(59, 59, 59, .52);
+            box-shadow: 0px 0px 18.69px 2.31px rgba(0, 0, 0, 0.18);
+            width: 100%;
+            outline: none;
+            float: left;
+            border-radius: 10px;
+            border: 1px solid rgb(165, 147, 102);
+            box-shadow: 0px 0px 18.69px 2.31px rgba(0, 0, 0, 0.18);
+            padding-right: 15px;
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+
+            &:focus::-moz-placeholder {
+                color: #fff;
+            }
+
+            &:focus:-moz-placeholder {
+                color: #fff;
+            }
+
+            &:focus:-ms-input-placeholder {
+                color: #fff;
+            }
+        }
+
+        .button {
+            display: block;
+            height: 60px;
+            width: 260px;
+            border-radius: 8px;
+            border: 1px solid $gold2;
+            padding: 5px;
+            position: absolute;
+
+            button {
+                font-weight: 700;
+                border: none;
+                outline: none;
+//                position: absolute;
+                display: block;
+                height: 48px;
+                width: 248px;
+                line-height: 45px;
+                text-align: center;
+                border-radius: 8px;
+                color: #000;
+                background: linear-gradient(45deg, $gold2, $gold);
+                transition: background 0.4s;
+
+                .text {
+                    position: relative;
+                    top: -20px;
+                }
+
+                &:hover {
+                    color: #000;
+                    text-decoration: none;
+
+                    .pencil {
+                        padding-left: 60px;
+                    }
+                }
+
+                .pencil {
+                    font-weight: 700;
+                    font-size: 18px;
+                    display: inline-block;
+                    height: 48px;
+                    padding-left: 40px;
+                    background-image: url(../img/pencile.png);
+                    background-repeat: no-repeat;
+                    background-position: 0px center;
+                    transition: padding-left .3s;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .section_1 {
+            background-position: 120px center;
+
+            h1 {
+                margin-top: 20px;
+            }
+
+            .goldline_about {
+                height: 4px;
+                width: 50%;
+                margin-top: 50px;
+                margin-bottom: 60px;
+            }
+
+            p {
+                margin-top: 50px;
+                font-size: 20px;
+            }
+        }
+
+        .section_2 {
+            margin: 50px;
+        }
+
+        .section_3 {
+            padding-top: 150px;
+            h2{
+                margin-top: 60px;
+                margin-bottom: 120px;
+            }
+            p {
+                margin-top: 50px;
+                font-size: 20px;
+            }
+            form{
+                height: 700px;
+            }
+            input{
+                height: 50px;
+            }
+            input,textarea{
+                margin-bottom: 40px;
+            }
+            textarea{
+                height: 150px;
+            }
+            .button{
+                bottom: 20px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 991px) {
+        .section_1 {
+            background-position: -135px center;
+
+            h1 {
+                margin-top: 70px;
+                font-size: 32px;
+            }
+
+            .goldline_about {
+                height: 4px;
+                width: 50%;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin-top: 50px;
+                font-size: 16px;
+            }
+        }
+
+        .section_2 {
+            margin: 50px;
+        }
+
+        .section_3 {
+            padding-top: 50px;
+            h2{
+                margin: 0 0 40px;
+            }
+            p {
+                margin-top: 50px;
+                font-size: 20px;
+            }
+            form{
+                height: 590px;
+            }
+            input{
+                height: 50px;
+            }
+            input,textarea{
+                margin-bottom: 40px;
+            }
+            textarea{
+                height: 150px;
+            }
+            .button{
+                bottom: 0px;
+            }
+        }
+        .section_3 {
+            background-position: -100px top;
+        }
+    }
+    
+    
+    .section_footer{
+            background-color: #1f1f1f;
+            width: 100%;
+
+            p {
+                display: inline-block;
+                margin: 0;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                color: #676a6a;
+                font-size: 20px;
+                padding-left: 55px;
+                background-image: url(../img/trademark.png);
+                background-position: 20px center;
+                background-repeat: no-repeat;
+                padding-right: 20px;
+            }
+        }
+}
